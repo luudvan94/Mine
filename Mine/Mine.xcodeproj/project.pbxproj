@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A5930037C13325F18A35CCA1 /* Pods_Mine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 865ED72510064DE99F674F12 /* Pods_Mine.framework */; };
 		CDA0DB5A206C001400195580 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA0DB59206C001400195580 /* AppDelegate.swift */; };
 		CDA0DB5C206C001400195580 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA0DB5B206C001400195580 /* ViewController.swift */; };
 		CDA0DB5F206C001400195580 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDA0DB5D206C001400195580 /* Main.storyboard */; };
 		CDA0DB61206C001400195580 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDA0DB60206C001400195580 /* Assets.xcassets */; };
 		CDA0DB64206C001400195580 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDA0DB62206C001400195580 /* LaunchScreen.storyboard */; };
+		CDA0DB6F206C024F00195580 /* TodoTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA0DB6E206C024F00195580 /* TodoTask.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		226EC949DECAADEA760B5016 /* Pods-Mine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mine.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mine/Pods-Mine.release.xcconfig"; sourceTree = "<group>"; };
+		6D7912E0B270B7C995122CD9 /* Pods-Mine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mine.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mine/Pods-Mine.debug.xcconfig"; sourceTree = "<group>"; };
+		865ED72510064DE99F674F12 /* Pods_Mine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDA0DB56206C001400195580 /* Mine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDA0DB59206C001400195580 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CDA0DB5B206C001400195580 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,7 @@
 		CDA0DB60206C001400195580 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CDA0DB63206C001400195580 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CDA0DB65206C001400195580 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDA0DB6E206C024F00195580 /* TodoTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoTask.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5930037C13325F18A35CCA1 /* Pods_Mine.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7D1D89F3A12BC66777A55A19 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				865ED72510064DE99F674F12 /* Pods_Mine.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		871399A7076DDF3029A29082 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6D7912E0B270B7C995122CD9 /* Pods-Mine.debug.xcconfig */,
+				226EC949DECAADEA760B5016 /* Pods-Mine.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CDA0DB4D206C001400195580 = {
 			isa = PBXGroup;
 			children = (
 				CDA0DB58206C001400195580 /* Mine */,
 				CDA0DB57206C001400195580 /* Products */,
+				871399A7076DDF3029A29082 /* Pods */,
+				7D1D89F3A12BC66777A55A19 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +80,7 @@
 		CDA0DB58206C001400195580 /* Mine */ = {
 			isa = PBXGroup;
 			children = (
+				CDA0DB6B206C022400195580 /* Services */,
 				CDA0DB59206C001400195580 /* AppDelegate.swift */,
 				CDA0DB5B206C001400195580 /* ViewController.swift */,
 				CDA0DB5D206C001400195580 /* Main.storyboard */,
@@ -64,6 +91,30 @@
 			path = Mine;
 			sourceTree = "<group>";
 		};
+		CDA0DB6B206C022400195580 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CDA0DB6C206C022B00195580 /* Todo */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CDA0DB6C206C022B00195580 /* Todo */ = {
+			isa = PBXGroup;
+			children = (
+				CDA0DB6D206C023500195580 /* Model */,
+			);
+			path = Todo;
+			sourceTree = "<group>";
+		};
+		CDA0DB6D206C023500195580 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CDA0DB6E206C024F00195580 /* TodoTask.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +122,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CDA0DB68206C001400195580 /* Build configuration list for PBXNativeTarget "Mine" */;
 			buildPhases = (
+				3D59780078F5648B60378DCC /* [CP] Check Pods Manifest.lock */,
 				CDA0DB52206C001400195580 /* Sources */,
 				CDA0DB53206C001400195580 /* Frameworks */,
 				CDA0DB54206C001400195580 /* Resources */,
+				B9D29C45FDD57A0138039132 /* [CP] Embed Pods Frameworks */,
+				0439A6BD704F24EBF7EA893B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,11 +185,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0439A6BD704F24EBF7EA893B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Mine/Pods-Mine-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3D59780078F5648B60378DCC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B9D29C45FDD57A0138039132 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Mine/Pods-Mine-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CDA0DB52206C001400195580 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDA0DB6F206C024F00195580 /* TodoTask.swift in Sources */,
 				CDA0DB5C206C001400195580 /* ViewController.swift in Sources */,
 				CDA0DB5A206C001400195580 /* AppDelegate.swift in Sources */,
 			);
@@ -272,12 +375,17 @@
 		};
 		CDA0DB69206C001400195580 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D7912E0B270B7C995122CD9 /* Pods-Mine.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6T98W5TB24;
 				INFOPLIST_FILE = Mine/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/Realm/core",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = luudvan.Mine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -287,12 +395,17 @@
 		};
 		CDA0DB6A206C001400195580 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 226EC949DECAADEA760B5016 /* Pods-Mine.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6T98W5TB24;
 				INFOPLIST_FILE = Mine/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/Realm/core",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = luudvan.Mine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
