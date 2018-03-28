@@ -14,6 +14,8 @@
 		CDA0DB61206C001400195580 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDA0DB60206C001400195580 /* Assets.xcassets */; };
 		CDA0DB64206C001400195580 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDA0DB62206C001400195580 /* LaunchScreen.storyboard */; };
 		CDA0DB6F206C024F00195580 /* TodoTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA0DB6E206C024F00195580 /* TodoTask.swift */; };
+		CDA0DDAE206C090100195580 /* DailyTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA0DDAD206C090100195580 /* DailyTask.swift */; };
+		CDA0DDB1206C0EE100195580 /* TaskWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA0DDB0206C0EE100195580 /* TaskWorker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		CDA0DB63206C001400195580 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CDA0DB65206C001400195580 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDA0DB6E206C024F00195580 /* TodoTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoTask.swift; sourceTree = "<group>"; };
+		CDA0DDAD206C090100195580 /* DailyTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyTask.swift; sourceTree = "<group>"; };
+		CDA0DDB0206C0EE100195580 /* TaskWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskWorker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,7 @@
 		CDA0DB6C206C022B00195580 /* Todo */ = {
 			isa = PBXGroup;
 			children = (
+				CDA0DDAF206C0CF800195580 /* Worker */,
 				CDA0DB6D206C023500195580 /* Model */,
 			);
 			path = Todo;
@@ -111,8 +116,17 @@
 			isa = PBXGroup;
 			children = (
 				CDA0DB6E206C024F00195580 /* TodoTask.swift */,
+				CDA0DDAD206C090100195580 /* DailyTask.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		CDA0DDAF206C0CF800195580 /* Worker */ = {
+			isa = PBXGroup;
+			children = (
+				CDA0DDB0206C0EE100195580 /* TaskWorker.swift */,
+			);
+			path = Worker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,6 +252,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDA0DDB1206C0EE100195580 /* TaskWorker.swift in Sources */,
+				CDA0DDAE206C090100195580 /* DailyTask.swift in Sources */,
 				CDA0DB6F206C024F00195580 /* TodoTask.swift in Sources */,
 				CDA0DB5C206C001400195580 /* ViewController.swift in Sources */,
 				CDA0DB5A206C001400195580 /* AppDelegate.swift in Sources */,
