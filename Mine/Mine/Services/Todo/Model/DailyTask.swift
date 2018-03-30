@@ -15,6 +15,7 @@ class DailyTask: Object {
   @objc dynamic var isNotifiable  = false
   @objc dynamic var minsAtleast   = 0
   @objc dynamic var daysAWeek     = 0
+  let records                     = List<DailyTaskRecord>()
 }
 
 class DailyTaskRecord: Object {
